@@ -4,10 +4,13 @@
 
 .u-section-1 .u-shape-1 {
   height: 630px;
-  background-image: none;
   margin-top: 0;
   margin-bottom: 0;
   margin-left: 0;
+  transition-duration: 0.5s;
+  box-shadow: -2px 0 0 0 rgba(0,0,0,0);
+  transform: translateX(0px) translateY(0px) scale(1) rotate(0deg);
+  text-shadow: 0px 0px 0px rgba(0,0,0,0);
 }
 
 .u-section-1 .u-layout-wrap-1 {
@@ -194,6 +197,20 @@
     height: 340px;
     width: auto;
   }
+}
+
+.u-section-1 .u-shape-1,
+.u-section-1 .u-shape-1:before,
+.u-section-1 .u-shape-1 > .u-container-layout:before {
+  transition-property: fill, color, background-color, stroke-width, border-style, border-width, border-top-width, border-left-width, border-right-width, border-bottom-width, custom-border, borders, box-shadow, text-shadow, opacity, border-radius, stroke, border-color, font-size, font-style, font-weight, text-decoration, letter-spacing, transform, background-image, image-zoom, background-size, background-position;
+}
+
+.u-section-1 .u-container-layout:hover .u-shape-1 {
+  transform: rotate(0deg) scale(1) translateX(0px) translateY(0px) !important;
+}
+
+.u-container-layout.hover .u-section-1 .u-shape-1 {
+  transform: rotate(0deg) scale(1) translateX(0px) translateY(0px) !important;
 } .u-section-2 {
   background-image: url("images/947346.jpg");
   background-position: 50% 50%;
@@ -209,6 +226,11 @@
   background-image: none;
   box-shadow: 5px 5px 20px 0 rgba(0,0,0,0.4);
   height: auto;
+  --animation-custom_in-translate_x: -200px;
+  --animation-custom_in-translate_y: 0px;
+  --animation-custom_in-opacity: 0;
+  --animation-custom_in-rotate: 0deg;
+  --animation-custom_in-scale: 1;
   margin: 128px auto 60px 0;
 }
 
@@ -239,6 +261,11 @@
 
   .u-section-2 .u-group-1 {
     height: auto;
+  }
+
+  .u-section-2 .u-text-1 {
+    --animation-custom_in-translate_x: -200px;
+    --animation-custom_in-scale: 1;
   }
 }
 
@@ -318,6 +345,11 @@
   min-height: 368px;
   width: 611px;
   height: auto;
+  --animation-custom_in-translate_x: -400px;
+  --animation-custom_in-translate_y: 0px;
+  --animation-custom_in-opacity: 0;
+  --animation-custom_in-rotate: 180deg;
+  --animation-custom_in-scale: 1;
   margin: -192px 0 0 auto;
 }
 
@@ -464,8 +496,11 @@
 .u-section-4 .u-group-1 {
   min-height: 405px;
   width: 548px;
-  box-shadow: 5px 5px 20px 0 rgba(0,0,0,0.15);
+  box-shadow: 0px 0px 0px rgba(0,0,0,0);
   height: auto;
+  transition-duration: 0.5s;
+  transform: translateX(0px) translateY(0px) scale(1) rotate(0deg);
+  text-shadow: 0px 0px 0px rgba(0,0,0,0);
   margin: -209px 79px 60px auto;
 }
 
@@ -593,6 +628,40 @@
   .u-section-4 .u-text-1 {
     font-size: 1.5rem;
   }
+}
+
+.u-section-4 .u-group-1,
+.u-section-4 .u-group-1:before,
+.u-section-4 .u-group-1 > .u-container-layout:before {
+  transition-property: fill, color, background-color, stroke-width, border-style, border-width, border-top-width, border-left-width, border-right-width, border-bottom-width, custom-border, borders, box-shadow, text-shadow, opacity, border-radius, stroke, border-color, font-size, font-style, font-weight, text-decoration, letter-spacing, transform, background-image, image-zoom, background-size, background-position;
+}
+
+.u-section-4 .u-group-1.u-group-1.u-group-1:hover {
+  transform: translateX(10px) translateY(0px) scale(1) !important;
+  box-shadow: 0px 0px 0px  rgba(0,0,0,0) !important;
+  text-shadow: 0px 0px 0px rgba(0,0,0,0) !important;
+}
+
+.u-section-4 .u-group-1 {
+  border-color: transparent !important;
+}
+
+.u-section-4 .u-group-1.u-group-1.u-group-1.hover {
+  transform: translateX(10px) translateY(0px) scale(1) !important;
+  box-shadow: 0px 0px 0px  rgba(0,0,0,0) !important;
+  text-shadow: 0px 0px 0px rgba(0,0,0,0) !important;
+}
+
+.u-section-4 .u-group-1 {
+  border-color: transparent !important;
+}
+
+.u-section-4 .u-container-layout:hover .u-group-1 {
+  transform: rotate(0deg) scale(1) translateX(0px) translateY(0px) !important;
+}
+
+.u-container-layout.hover .u-section-4 .u-group-1 {
+  transform: rotate(0deg) scale(1) translateX(0px) translateY(0px) !important;
 } .u-section-5 {
   background-image: none;
 }
